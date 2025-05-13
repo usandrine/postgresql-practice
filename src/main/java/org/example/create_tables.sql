@@ -20,4 +20,6 @@ CREATE TABLE Orders (
     customer_id INT, -- No foreign key for now
     order_date DATE,
     total_amount NUMERIC(7,2)
+     FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
+
 );
